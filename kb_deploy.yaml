@@ -19,11 +19,11 @@ spec:
     spec:
       containers:
       - env:
-        - name: ELASTICSEARCH_URL 
-          value: http://elasticsearch:9200
+        - name: ELASTICSEARCH_URL
+          value: http://es:9200
         - name: XPACK_SECURITY_ENABLED
           value: "true"
-        image: docker.elastic.co/kibana/kibana:6.2.1
+        image: docker.elastic.co/kibana/kibana:6.2.4
         name: kibana
         ports:
         - containerPort: 5601
